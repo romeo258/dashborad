@@ -12577,3 +12577,37 @@ body.sidebar-toggled footer.sticky-footer {
 .custom-bg-color {
   background-color: var(--blue) !important; /* Utilisez la couleur bleue définie dans vos variables CSS */
 }
+
+/* Button Scrollllllllllllllllllllllllllllllllll */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.5s ease-out;;
+  opacity: 0.7;
+}
+
+.scroll-to-top i {
+  font-size: 20px;
+  line-height: 40px;
+  transition: transform 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.scroll-to-top:hover i {
+  transform: translateY(-2px);
+}
+
+.scroll-to-top.hidden {
+  display: none;
+}

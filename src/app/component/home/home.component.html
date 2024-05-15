@@ -216,7 +216,8 @@
   </div>
   <!-- Scroll to Top Button-->
 
-  <button *ngIf="showScrollButton" (click)="scrollToTop()" class="scroll-to-top rounded">
+  <button [class.scroll-to-top]="showScrollButton" [class.hidden]="!showScrollButton" (click)="scrollToTop()" class="rounded">
     <i class="fas fa-angle-up"></i>
   </button>
+  
 </body>
